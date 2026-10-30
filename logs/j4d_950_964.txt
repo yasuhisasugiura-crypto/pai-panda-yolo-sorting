@@ -1,0 +1,69 @@
+== scene 950: wine glass(0.395,-0.191), bottle(0.385,0.162), apple(0.386,-0.001), orange(0.519,-0.276)
+   ok     orange     truth(0.519,-0.276) det(0.519,-0.276) err=0.08cm score=0.98
+   ok     apple      truth(0.386,-0.001) det(0.386,-0.001) err=0.09cm score=0.98
+   ok     bottle     truth(0.385,0.162) det(0.385,0.163) err=0.10cm score=0.96
+   ok     wine glass truth(0.395,-0.191) det(0.395,-0.193) err=0.21cm score=0.97
+   scene 950: PASS (found 4/4, extra 0, max err 0.21cm)
+== scene 951: banana(0.367,-0.056), cup(0.353,-0.277), bottle(0.451,-0.164), apple(0.453,0.214)
+   ok     apple      truth(0.453,0.214) det(0.453,0.214) err=0.03cm score=0.98
+   ok     bottle     truth(0.451,-0.164) det(0.451,-0.165) err=0.07cm score=0.97
+   ok     banana     truth(0.367,-0.056) det(0.367,-0.057) err=0.11cm score=0.95
+   ok     cup        truth(0.353,-0.277) det(0.353,-0.279) err=0.16cm score=0.97
+   scene 951: PASS (found 4/4, extra 0, max err 0.16cm)
+== scene 952: cup(0.361,0.145), wine glass(0.425,-0.039), apple(0.339,-0.230), banana(0.519,-0.225)
+   ok     apple      truth(0.339,-0.230) det(0.339,-0.230) err=0.04cm score=0.98
+   ok     wine glass truth(0.425,-0.039) det(0.425,-0.039) err=0.05cm score=0.98
+   ok     cup        truth(0.361,0.145) det(0.360,0.146) err=0.13cm score=0.98
+   ok     banana     truth(0.519,-0.225) det(0.519,-0.227) err=0.20cm score=0.95
+   scene 952: PASS (found 4/4, extra 0, max err 0.20cm)
+== scene 953: bottle(0.376,-0.269), orange(0.447,0.028), apple(0.456,-0.131), wine glass(0.511,0.154)
+   ok     apple      truth(0.456,-0.131) det(0.456,-0.131) err=0.04cm score=0.96
+   ok     orange     truth(0.447,0.028) det(0.447,0.028) err=0.06cm score=0.98
+   ok     wine glass truth(0.511,0.154) det(0.511,0.155) err=0.10cm score=0.96
+   ok     bottle     truth(0.376,-0.269) det(0.376,-0.271) err=0.17cm score=0.96
+   scene 953: PASS (found 4/4, extra 0, max err 0.17cm)
+== scene 954: orange(0.385,0.188), banana(0.462,-0.085), wine glass(0.372,0.038), cup(0.398,-0.251)
+   ok     orange     truth(0.385,0.188) det(0.385,0.188) err=0.05cm score=0.98
+   ok     wine glass truth(0.372,0.038) det(0.372,0.037) err=0.10cm score=0.98
+   ok     banana     truth(0.462,-0.085) det(0.461,-0.086) err=0.13cm score=0.95
+   ok     cup        truth(0.398,-0.251) det(0.398,-0.253) err=0.23cm score=0.97
+   scene 954: PASS (found 4/4, extra 0, max err 0.23cm)
+== scene 955: bottle(0.358,0.199), cup(0.513,-0.294), apple(0.428,0.084), wine glass(0.337,-0.210), orange(0.416,-0.101), banana(0.515,0.295)
+   ok     apple      truth(0.428,0.084) det(0.428,0.084) err=0.04cm score=0.98
+   ok     bottle     truth(0.358,0.199) det(0.358,0.200) err=0.05cm score=0.96
+   ok     orange     truth(0.416,-0.101) det(0.416,-0.101) err=0.08cm score=0.98
+   ok     wine glass truth(0.337,-0.210) det(0.337,-0.211) err=0.17cm score=0.96
+   ok     cup        truth(0.513,-0.294) det(0.513,-0.296) err=0.18cm score=0.96
+   ok     banana     truth(0.515,0.295) det(0.516,0.298) err=0.27cm score=0.94
+   scene 955: PASS (found 6/6, extra 0, max err 0.27cm)
+== scene 956: bottle(0.497,0.170), apple(0.347,0.061), wine glass(0.490,-0.290), orange(0.372,0.255), cup(0.344,-0.073), banana(0.405,-0.201)
+   ok     apple      truth(0.347,0.061) det(0.347,0.061) err=0.04cm score=0.97
+   ok     orange     truth(0.372,0.255) det(0.372,0.255) err=0.05cm score=0.98
+   ok     cup        truth(0.344,-0.073) det(0.344,-0.073) err=0.08cm score=0.96
+   ok     bottle     truth(0.497,0.170) det(0.498,0.170) err=0.10cm score=0.96
+   ok     banana     truth(0.405,-0.201) det(0.405,-0.203) err=0.19cm score=0.95
+   ok     wine glass truth(0.490,-0.290) det(0.491,-0.292) err=0.20cm score=0.97
+   scene 956: PASS (found 6/6, extra 0, max err 0.20cm)
+== scene 957: bottle(0.499,0.290), banana(0.350,0.085), apple(0.487,0.053), wine glass(0.417,-0.181), orange(0.499,-0.279)
+   ok     apple      truth(0.487,0.053) det(0.487,0.053) err=0.03cm score=0.99
+   ok     orange     truth(0.499,-0.279) det(0.499,-0.279) err=0.08cm score=0.97
+   ok     banana     truth(0.350,0.085) det(0.349,0.086) err=0.10cm score=0.95
+   ok     bottle     truth(0.499,0.290) det(0.499,0.292) err=0.19cm score=0.97
+   ok     wine glass truth(0.417,-0.181) det(0.417,-0.183) err=0.23cm score=0.97
+   scene 957: PASS (found 5/5, extra 0, max err 0.23cm)
+== scene 958: bottle(0.425,-0.298), wine glass(0.362,0.151), orange(0.472,0.273), cup(0.471,-0.179), banana(0.455,0.016)
+   ok     orange     truth(0.472,0.273) det(0.472,0.273) err=0.03cm score=0.98
+   ok     banana     truth(0.455,0.016) det(0.455,0.016) err=0.03cm score=0.96
+   ok     wine glass truth(0.362,0.151) det(0.362,0.152) err=0.07cm score=0.96
+   ok     bottle     truth(0.425,-0.298) det(0.425,-0.300) err=0.16cm score=0.97
+   ok     cup        truth(0.471,-0.179) det(0.472,-0.180) err=0.17cm score=0.97
+   scene 958: PASS (found 5/5, extra 0, max err 0.17cm)
+== scene 959: wine glass(0.343,0.128), apple(0.447,0.287), orange(0.343,-0.057), banana(0.362,-0.239), bottle(0.500,0.161)
+   ok     wine glass truth(0.343,0.128) det(0.343,0.128) err=0.02cm score=0.96
+   ok     apple      truth(0.447,0.287) det(0.447,0.287) err=0.04cm score=0.99
+   ok     bottle     truth(0.500,0.161) det(0.500,0.162) err=0.04cm score=0.96
+   ok     orange     truth(0.343,-0.057) det(0.343,-0.057) err=0.06cm score=0.98
+   ok     banana     truth(0.362,-0.239) det(0.362,-0.241) err=0.17cm score=0.94
+   scene 959: PASS (found 5/5, extra 0, max err 0.17cm)
+== scene 960: banana(0.475,-0.013), wine glass(0.343,-0.149), orange(0.370,0.238), bottle(0.378,0.109), cup(0.450,-0.245)
+PRECHECK FAILED: gz model --list unreadable or leftover gen*/ev* models

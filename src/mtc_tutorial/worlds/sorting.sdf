@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Newly authored v0.4.3 sensor-only world; original omitted from input TXT. -->
+<sdf version="1.9"><world name="sorting">
+<physics name="physics" type="ignored"><max_step_size>0.001</max_step_size><real_time_factor>1</real_time_factor></physics>
+<plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+<plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+<plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+<plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>
+<light name="sun" type="directional"><pose>0 0 10 0 0 0</pose><diffuse>0.8 0.8 0.8 1</diffuse><specular>0.2 0.2 0.2 1</specular><direction>-0.5 0.1 -0.9</direction><cast_shadows>false</cast_shadows></light>
+<model name="ground"><static>true</static><link name="link"><collision name="c"><geometry><plane><normal>0 0 1</normal><size>4 4</size></plane></geometry></collision><visual name="v"><geometry><plane><normal>0 0 1</normal><size>4 4</size></plane></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link></model>
+<model name="rgbd_cam"><static>true</static><pose>0.42 0 0.90 0 1.5708 0</pose><link name="link">
+<sensor name="rgbd" type="rgbd_camera"><always_on>true</always_on><update_rate>10</update_rate><topic>rgbd_camera</topic>
+<camera><horizontal_fov>1.0</horizontal_fov><image><width>640</width><height>480</height><format>R8G8B8</format></image><clip><near>0.05</near><far>5</far></clip><optical_frame_id>rgbd_camera</optical_frame_id></camera>
+</sensor></link></model>
+</world></sdf>

@@ -1,0 +1,9 @@
+== scene 958: bottle(0.425,-0.298), wine glass(0.362,0.151), orange(0.472,0.273), cup(0.471,-0.179), banana(0.455,0.016)
+   ok     orange     truth(0.472,0.273) det(0.472,0.273) err=0.03cm score=0.98
+   ok     banana     truth(0.455,0.016) det(0.455,0.016) err=0.03cm score=0.96
+   ok     wine glass truth(0.362,0.151) det(0.362,0.152) err=0.07cm score=0.96
+   ok     bottle     truth(0.425,-0.298) det(0.425,-0.300) err=0.16cm score=0.97
+   ok     cup        truth(0.471,-0.179) det(0.472,-0.180) err=0.17cm score=0.97
+   scene 958: PASS (found 5/5, extra 0, max err 0.17cm)
+== SUMMARY: 1/1 scenes PASS; position error mean 0.09cm max 0.17cm (n=5)
+LIVE_EVAL_PASS

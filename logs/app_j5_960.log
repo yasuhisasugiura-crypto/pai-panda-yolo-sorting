@@ -1,0 +1,1092 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-10-25-01-56-07-304379-eb1d48a8f0b1-277262
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [277266]
+[INFO] [parameter_bridge-2]: process started with pid [277267]
+[INFO] [static_transform_publisher-3]: process started with pid [277268]
+[INFO] [perception_node-4]: process started with pid [277269]
+[INFO] [mtc_node-5]: process started with pid [277270]
+[static_transform_publisher-3] [INFO] [1792893367.479840714] [camera_static_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.420000', '0.000000', '0.900000')
+[static_transform_publisher-3] rotation: ('0.707107', '-0.707107', '0.000000', '0.000000')
+[static_transform_publisher-3] from 'world' to 'rgbd_camera'
+[gz-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ubuntu'
+[mtc_node-5] [INFO] [1792893367.918054798] [mtc_node]: mode=detections autonomous=1 objects=0 (vel=0.20 acc=0.20)
+[mtc_node-5] [WARN] [1792893368.152370964] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[parameter_bridge-2] [INFO] [1792893368.490678048] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/rgbd_camera/image (gz.msgs.Image) -> /rgbd_camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1792893368.494089589] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/rgbd_camera/depth_image (gz.msgs.Image) -> /rgbd_camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1792893368.494569714] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/rgbd_camera/camera_info (gz.msgs.CameraInfo) -> /rgbd_camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1792893368.495121548] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[perception_node-4] [INFO] [1792893369.174803756] [perception_node]: [live3d] loading YOLO model: /home/ubuntu/ros2_ws_levelup_v044_review/models/sim6_t2.pt
+[perception_node-4] [INFO] [1792893369.293392298] [perception_node]: mode=live3d classes=['bottle', 'cup', 'wine glass', 'banana', 'apple', 'orange'] image_dir=/home/ubuntu/pai_samples
+[mtc_node-5] [INFO] [1792893483.066943170] [mtc_node]: target sorting_demo_obj_det_1_banana (RIGHT) -> (0.56, -0.40)
+[mtc_node-5] [WARN] [1792893483.068133462] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893483.108895337] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.rdf_loader]: Loaded robot model in 0.0106086 seconds
+[mtc_node-5] [INFO] [1792893483.109015920] [planning_scene_interface_187651165923808.mtc_node.moveit.core.robot_model]: Loading robot model 'panda'...
+[mtc_node-5] [INFO] [1792893483.131822670] [planning_scene_interface_187651165923808.mtc_node.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'panda_arm': 1 1 1 1 1 1 1
+[mtc_node-5] [WARN] [1792893483.132921254] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893483.200910837] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.202620254] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.203682962] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.203701379] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893483.205564629] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893483.205575920] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.205599920] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.205603087] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.205615254] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.206568962] [mtc_node]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.208140087] [mtc_node]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.208146462] [mtc_node]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.210544337] [mtc_node]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.210772379] [mtc_node]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893483.211933129] [mtc_node]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893483.465926712] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.466295545] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893483.466303670] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893483.466355462] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.466386587] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.467400254] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893483.467619254] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.493053754] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.505656879] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.506732545] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893483.506865004] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893483.648962045] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.649082129] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893483.649086087] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893483.649116045] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.649153795] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.650196379] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893483.650267629] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.668362795] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.678191295] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.679377629] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893483.679496504] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893483.682821962] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.682879337] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893483.682883129] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893483.682901212] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.682915254] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.683222295] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893483.683276420] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.697869212] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.705729462] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.706773045] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893483.706883504] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893483.794214629] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.794396587] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893483.794403796] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893483.794510712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.794562254] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.794982796] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893483.795052879] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.811674171] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.818289837] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.819088796] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893483.819207796] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893483.819754754] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893483.864299546] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.864554171] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893483.864559671] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893483.864586712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.864618046] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.865465004] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893483.865747754] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.871835004] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.877186587] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.879170837] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893483.881970296] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893483.882851962] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.883021212] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893483.883027754] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893483.883048546] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.883073254] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.883464587] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893483.883532337] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.906428712] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.915138296] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.916176421] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893483.916282546] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893483.956177462] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893483.956275962] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893483.956281671] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893483.956329129] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893483.956419671] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893483.956849921] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893483.956944254] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893483.975019796] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893483.980302921] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893483.981149879] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893483.981235837] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893483.981628671] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893484.029341254] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.029469129] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.029475379] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.029504129] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.029562921] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.029978962] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.030099671] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.044773379] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.050084421] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.050733087] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.051472379] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893484.052162921] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.052210254] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.052214087] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.052232629] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.052260087] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.052536046] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.052591754] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.071188212] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.075221212] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.076566212] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.076641546] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893484.138236379] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.138351712] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.138356296] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.138385004] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.138421921] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.138744379] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.138813421] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.157337087] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.166531504] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.168040212] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.168170421] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893484.168614629] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893484.214337671] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.214446796] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.214450879] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.214475546] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.214517212] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.214827962] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.214933296] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.231726796] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.235092254] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.237688546] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.237779046] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893484.242442629] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.242521379] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.242525171] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.242546837] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.242577754] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.242864837] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.242918754] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.261280921] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.266787504] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.268844129] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.268940129] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893484.339529671] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.339921796] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.339945462] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.340014962] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.340062254] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.340379296] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.340438504] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.355292421] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.361918129] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.362816129] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.362989296] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893484.363688879] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893484.386889171] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.386985962] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.386991379] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.387015796] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.387035754] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.387364129] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.387444837] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.405728296] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.427234504] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.430761712] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.430879421] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893484.431898421] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.431954796] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.431959671] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.431977004] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.432003712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.432369212] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.432435504] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.445934379] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.449186004] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.450108838] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.450205296] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893484.519264296] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.519388588] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.519394713] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.519421463] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.519451463] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.520101546] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.520209213] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.548068588] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.553861713] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.554641338] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.554717629] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893484.556421171] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893484.620433379] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893484.620539838] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893484.620545338] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893484.620570713] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893484.620605379] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893484.621138921] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893484.621248588] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893484.636014338] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893484.640266129] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893484.641194463] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893484.641754879] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893504.409101805] [mtc_node]:   placed sorting_demo_obj_det_1_banana
+[mtc_node-5] [INFO] [1792893505.410973375] [mtc_node]: target sorting_demo_obj_det_4_bottle (LEFT) -> (0.56, 0.40)
+[mtc_node-5] [WARN] [1792893505.413498667] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893505.448777292] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.rdf_loader]: Loaded robot model in 0.00263929 seconds
+[mtc_node-5] [INFO] [1792893505.449176625] [planning_scene_interface_187651165923808.mtc_node.moveit.core.robot_model]: Loading robot model 'panda'...
+[mtc_node-5] [INFO] [1792893505.455146625] [planning_scene_interface_187651165923808.mtc_node.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'panda_arm': 1 1 1 1 1 1 1
+[mtc_node-5] [WARN] [1792893505.456169250] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893505.583026958] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[mtc_node-5] [INFO] [1792893505.584734917] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893505.586114417] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893505.586134083] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893505.586195167] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893505.586199458] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893505.586217958] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893505.586221208] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893505.586232833] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893505.587210083] [mtc_node]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893505.588469875] [mtc_node]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893505.588479125] [mtc_node]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893505.589687792] [mtc_node]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893505.589698417] [mtc_node]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893505.590533875] [mtc_node]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893505.850313375] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893505.850409583] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893505.850416125] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893505.850443083] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893505.850474208] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893505.851391208] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893505.851652375] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893505.868324792] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893505.873822958] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893505.874784667] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893505.874892000] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893505.965990417] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893505.966089792] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893505.966093542] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893505.966119042] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893505.966147000] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893505.966518042] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893505.966584000] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893505.982814417] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893505.989160875] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893505.990012292] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893505.990113542] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893505.994170667] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893505.994229542] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893505.994233250] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893505.994252417] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893505.994275083] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893505.994544042] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893505.994596125] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.013521125] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.019301542] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.020189708] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.020286208] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.102362042] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.102537834] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.102595000] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.102629292] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.102667625] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.103042167] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.103101584] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.128481584] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.130446792] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.130965125] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.131039875] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893506.131466667] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893506.173488125] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.173598375] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.173602542] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.173629709] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.173673209] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.173962209] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.174016709] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.190963000] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.202440875] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.203671584] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.203793250] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.204404042] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.204457042] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.204461334] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.204482459] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.204529959] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.204964792] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.205101500] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.223012417] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.228104584] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.228787917] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.228876417] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.299882292] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.300014959] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.300064834] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.300099375] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.300143917] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.300492000] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.300566209] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.326472792] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.328486084] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.329142334] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.329256000] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893506.335816834] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893506.367749375] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.367962209] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.367968709] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.368003417] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.368044584] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.368389750] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.368467209] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.382973792] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.388071167] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.389125542] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.389372375] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.392100417] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.392277959] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.392285417] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.392330584] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.392389625] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.393304792] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.393603834] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.409524834] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.413299334] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.414095875] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.414171334] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.472554000] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.472834959] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.472847959] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.472898542] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.472947167] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.473440250] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.473758292] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.477192542] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.479711542] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.480295375] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.480392167] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893506.480905917] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893506.506590792] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.506816584] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.506832334] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.506858292] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.506969375] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.507327209] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.507390375] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.526309125] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.545723459] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.547138542] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.547258959] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.547942667] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.548035959] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.548040417] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.548063042] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.548098709] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.548543709] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.548640875] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.565190375] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.569710750] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.570795959] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.571591167] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.626128334] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.626283584] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.626287917] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.626326125] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.626392209] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.627214250] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.627329459] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.634089709] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.636776834] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.637304417] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.637374375] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893506.637770584] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893506.678384959] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.678470917] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.678474709] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.678497250] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.678561625] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.678797959] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.678859375] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.699089417] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.707294792] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.708090459] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.708673542] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.709248542] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.709282000] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.709285667] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.709300834] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.709319334] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.709702625] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.709795917] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.727059542] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.733649417] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.734937584] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.735470209] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893506.805152626] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.805253959] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.805257792] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.805296334] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.805319917] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.805699959] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.806597167] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.812326459] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.815567917] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.816147292] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.816467209] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893506.816881042] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893506.843486917] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893506.843599334] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893506.843603667] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893506.843632709] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893506.843774751] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893506.844051667] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893506.844110459] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893506.869280667] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893506.877771042] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893506.880480001] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893506.881734126] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893526.700379093] [mtc_node]:   placed sorting_demo_obj_det_4_bottle
+[mtc_node-5] [INFO] [1792893527.704717927] [mtc_node]: target sorting_demo_obj_det_0_wine_glass (LEFT) -> (0.44, 0.40)
+[mtc_node-5] [WARN] [1792893527.705737635] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893527.737556552] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.rdf_loader]: Loaded robot model in 0.00101833 seconds
+[mtc_node-5] [INFO] [1792893527.737614177] [planning_scene_interface_187651165923808.mtc_node.moveit.core.robot_model]: Loading robot model 'panda'...
+[mtc_node-5] [INFO] [1792893527.744591261] [planning_scene_interface_187651165923808.mtc_node.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'panda_arm': 1 1 1 1 1 1 1
+[mtc_node-5] [WARN] [1792893527.745120011] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893527.844202886] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[mtc_node-5] [INFO] [1792893527.845399427] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893527.846785927] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893527.846805802] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893527.846867969] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893527.846870636] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893527.846889219] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893527.846891469] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893527.846902302] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893527.848759427] [mtc_node]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893527.850193344] [mtc_node]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893527.850204052] [mtc_node]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893527.851061552] [mtc_node]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893527.851071594] [mtc_node]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893527.851564761] [mtc_node]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893528.114755344] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.114848636] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.114855469] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.114883386] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.114913094] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.115666469] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.115855511] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.122535011] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.128285177] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.129299552] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.129409177] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.225053761] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.225151136] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.225156552] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.225183136] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.225209427] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.225544094] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.225619094] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.240961927] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.253594052] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.254433677] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.254943886] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.255781302] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.255827302] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.255830927] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.255848511] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.255871677] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.256175844] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.256232011] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.272126094] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.275352469] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.276080761] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.276142927] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.360773177] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.360874594] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.360878969] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.360961302] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.361002802] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.361380927] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.361470344] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.379120052] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.384060886] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.384896261] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.384979011] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893528.385590552] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893528.418587469] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.418808636] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.418814136] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.418850053] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.418882344] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.419177428] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.419244844] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.426756553] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.435208303] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.437261469] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.437387178] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.438621219] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.438692136] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.438696928] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.438722636] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.438757011] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.439163178] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.439237636] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.446629553] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.452248344] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.453933469] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.454049886] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.541321261] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.541430136] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.541434469] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.541458636] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.541493928] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.541829469] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.541923469] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.559542844] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.565192678] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.565998469] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.566106094] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893528.566524886] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893528.593016886] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.593148303] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.593152844] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.593178511] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.593195219] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.593469678] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.593541803] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.613141219] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.624168636] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.625487886] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.625640928] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.626395928] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.626431844] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.626436469] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.626456803] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.626476803] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.626958511] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.627041011] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.646040053] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.649290011] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.650253928] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.650359636] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.722025219] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.722168761] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.722178803] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.722221303] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.722244844] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.722608219] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.723271386] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.730973261] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.735441053] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.736558344] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.736644803] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893528.737064678] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893528.781835386] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.781946844] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.781951053] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.781981303] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.782028678] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.782414928] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.782730011] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.787833636] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.799024136] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.800197844] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.800323261] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.802413719] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.802646053] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.802671344] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.802710511] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.802773636] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.803447303] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.803570594] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.830903886] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.833880303] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.834577344] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.834667719] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.907296636] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.907429553] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.907434261] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.907480511] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.907551094] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.908339886] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.908788678] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.918963469] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.923249678] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.924241469] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.924337261] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893528.927783469] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893528.962416386] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.962685303] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.962692594] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.962734928] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.962774553] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.963313553] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.963388261] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893528.985263719] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893528.993523011] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893528.994676261] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893528.994791844] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893528.997138886] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893528.997417428] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893528.997483719] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893528.997540844] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893528.997580386] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893528.998118594] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893528.998462011] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893529.003675594] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893529.006160094] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893529.006765553] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893529.006829219] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893529.076818469] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893529.077092969] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893529.077189678] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893529.077314094] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893529.077349719] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893529.077847344] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893529.078014261] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893529.095697928] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893529.099594928] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893529.100497886] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893529.100615719] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893529.101061886] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893529.122938011] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893529.123470970] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893529.123477178] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893529.123522053] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893529.123543470] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893529.123831220] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893529.123885886] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893529.142997970] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893529.150950261] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893529.152108261] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893529.152214845] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893550.277920882] [mtc_node]:   placed sorting_demo_obj_det_0_wine_glass
+[mtc_node-5] [INFO] [1792893551.278411049] [mtc_node]: target sorting_demo_obj_det_2_orange (RIGHT) -> (0.44, -0.40)
+[mtc_node-5] [WARN] [1792893551.288643174] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893551.327169424] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.rdf_loader]: Loaded robot model in 0.00104058 seconds
+[mtc_node-5] [INFO] [1792893551.327248216] [planning_scene_interface_187651165923808.mtc_node.moveit.core.robot_model]: Loading robot model 'panda'...
+[mtc_node-5] [INFO] [1792893551.332575924] [planning_scene_interface_187651165923808.mtc_node.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'panda_arm': 1 1 1 1 1 1 1
+[mtc_node-5] [WARN] [1792893551.333198549] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893551.455667299] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[mtc_node-5] [INFO] [1792893551.456936549] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893551.457984008] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893551.457990799] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893551.458040008] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893551.458043466] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893551.458063091] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893551.458066049] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893551.458078216] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893551.459031133] [mtc_node]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893551.460261299] [mtc_node]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893551.460278133] [mtc_node]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893551.461582966] [mtc_node]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893551.461590799] [mtc_node]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893551.462566758] [mtc_node]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893551.778358466] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893551.778457133] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893551.778463133] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893551.778507591] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893551.778538633] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893551.780304091] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893551.780565549] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893551.797675716] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893551.802137799] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893551.802867299] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893551.802951216] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893551.887130799] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893551.887235674] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893551.887240383] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893551.887266633] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893551.887295549] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893551.887716633] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893551.887777883] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893551.916570341] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893551.928149091] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893551.929925674] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893551.930053466] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893551.930542299] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893551.930568466] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893551.930572174] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893551.930588258] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893551.930978924] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893551.931242424] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893551.931318424] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893551.953593633] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893551.963030133] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893551.963876383] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893551.963971091] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.013141424] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.013230299] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.013277883] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.013306966] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.013336674] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.013623924] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.013762924] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.017662049] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.023824633] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.027263133] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.027379258] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893552.027977966] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893552.063426424] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.063565966] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.063576216] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.063626924] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.063668383] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.063987508] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.064088841] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.094244133] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.103959341] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.105190299] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.105318091] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.106050549] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.106120133] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.106125883] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.106149841] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.106184549] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.106559258] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.106703174] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.122111549] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.126971966] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.127742466] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.127829008] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.180383841] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.180498633] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.180503008] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.180534258] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.180573050] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.180921633] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.181019300] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.188331175] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.193116175] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.193950050] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.194051008] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893552.195416633] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893552.251438508] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.251575633] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.251580966] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.251625966] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.251649300] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.251962133] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.252020258] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.277735758] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.281188925] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.281777175] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.281848925] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.283181966] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.283217966] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.283243383] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.283263341] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.283288800] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.283549550] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.283714341] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.313377133] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.321860341] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.322885425] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.322998050] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.394289800] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.394383966] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.394388841] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.394413925] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.394446966] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.394800550] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.394875300] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.412914300] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.420429425] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.421584716] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.421803133] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893552.422430425] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893552.456507925] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.456593091] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.456616800] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.456648133] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.456678133] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.457003466] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.457073800] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.474119841] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.478097216] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.478732800] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.478798883] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.480251091] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.480292341] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.480296175] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.480315758] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.480341925] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.480763216] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.480842800] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.496530175] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.502529091] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.503338341] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.503432591] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.607165425] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.607285925] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.607290508] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.607319258] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.607359675] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.607701591] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.607761133] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.625559841] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.632839633] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.633856841] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.633948175] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893552.634442425] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893552.706621550] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.706719133] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.706722841] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.706748216] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.706766758] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.707046800] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.707204175] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.714142675] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.727079425] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.728278175] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.728403008] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.729175925] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.729229591] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.729233883] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.729284300] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.729311508] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.729590425] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.729659800] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.756419841] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.763420341] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.764491425] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.764654050] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893552.857171883] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.857279758] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.857283508] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.857310800] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.857436800] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.857901467] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.857995092] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.872512758] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.875581342] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.876184675] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.876265008] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893552.877030092] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893552.904575300] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893552.904695633] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893552.904700175] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893552.904726383] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893552.904781883] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893552.905124217] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893552.905186883] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893552.910258842] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893552.914211883] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893552.914911092] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893552.914987883] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893571.696691670] [mtc_node]:   placed sorting_demo_obj_det_2_orange
+[mtc_node-5] [INFO] [1792893572.697621170] [mtc_node]: target sorting_demo_obj_det_3_cup (LEFT) -> (0.32, 0.40)
+[mtc_node-5] [WARN] [1792893572.700371128] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893572.751100045] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.rdf_loader]: Loaded robot model in 0.000926417 seconds
+[mtc_node-5] [INFO] [1792893572.751163878] [planning_scene_interface_187651165923808.mtc_node.moveit.core.robot_model]: Loading robot model 'panda'...
+[mtc_node-5] [INFO] [1792893572.758172878] [planning_scene_interface_187651165923808.mtc_node.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'panda_arm': 1 1 1 1 1 1 1
+[mtc_node-5] [WARN] [1792893572.759176128] [rcl.logging_rosout]: Publisher already registered for node name: 'mtc_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'mtc_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[mtc_node-5] [INFO] [1792893572.890466045] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[mtc_node-5] [INFO] [1792893572.891789295] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893572.893067462] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893572.893079545] [mtc_node]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893572.893136170] [mtc_node]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[mtc_node-5] [INFO] [1792893572.893139795] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893572.893160962] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893572.893164087] [mtc_node]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893572.893176295] [mtc_node]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893572.894277045] [mtc_node]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893572.895582503] [mtc_node]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893572.895588712] [mtc_node]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893572.896581420] [mtc_node]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[mtc_node-5] [INFO] [1792893572.896589003] [mtc_node]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893572.897263045] [mtc_node]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[mtc_node-5] [INFO] [1792893573.163393045] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.163488212] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.163494795] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.163521837] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.163550712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.164324629] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.164501795] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.179820295] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.186789379] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.187874712] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.187995337] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.273016379] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.273105504] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.273110295] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.273137879] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.273154795] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.273524462] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.273616920] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.278849420] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.283122795] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.283856754] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.283956004] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.284615129] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.284713545] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.284717920] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.284737962] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.284754879] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.285074712] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.285291462] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.292190295] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.296800670] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.297776004] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.297865129] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.388655795] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.388776629] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.388782295] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.388889545] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.388928712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.389277379] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.389352754] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.404343337] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.406879504] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.407451962] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.407535629] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893573.408024129] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893573.429706879] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.429845087] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.429849629] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.429877837] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.429907254] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.430465254] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.430653920] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.445496087] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.450973212] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.451882795] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.451976379] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.454536462] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.454568462] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.454572545] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.454591712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.454608545] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.454925170] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.455021295] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.459886795] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.466345879] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.471219837] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.471337004] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.545663754] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.545763754] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.545768045] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.545792587] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.545829712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.546247129] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.546328462] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.560600962] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.562681879] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.563230670] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.563297712] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893573.563678504] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893573.584312295] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.584430045] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.584434129] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.584459879] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.584485295] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.584820170] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.584884337] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.600617754] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.604980879] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.605713504] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.605806004] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.606832462] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.606885254] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.606888920] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.606907587] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.606931379] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.607232212] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.607332129] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.615613462] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.619054837] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.619926837] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.620001212] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.668773254] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.668848462] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.668852837] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.668878712] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.668911587] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.669269920] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.669340670] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.699408879] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.706389129] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.707340295] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.707444462] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893573.707894545] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893573.739879962] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.740067129] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.740072420] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.740112462] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.740183254] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.740669879] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.740844879] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.756273754] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.758471462] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.761597337] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.761695629] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.762379087] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.762429046] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.762434421] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.762455379] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.762479004] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.762823462] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.762893421] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.789933337] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.792795462] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.793364712] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.793423421] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.832250921] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.832422379] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.832427462] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.832452462] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.832483462] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.832803921] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.832877087] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.865775546] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.883460171] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.884914296] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.885054504] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893573.889475171] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893573.921423212] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.921587629] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.921593754] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.921654046] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.921689212] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.922208129] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.922316296] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.937000712] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.940879837] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.941673671] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.941764462] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893573.942656504] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893573.942705587] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893573.942709421] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893573.942829046] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893573.942885462] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893573.943521879] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893573.943628421] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893573.959029087] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893573.961681879] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893573.962175379] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893573.962237212] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893574.007368337] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893574.007478296] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893574.007483671] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893574.007510921] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893574.007550129] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893574.007906379] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893574.008073504] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893574.027188754] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893574.030828462] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893574.031490796] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893574.031576837] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [WARN] [1792893574.032163879] [planning_scene_interface_187651165923808.mtc_node.moveit.core.time_optimal_trajectory_generation]: There is a combination of revolute and prismatic joints in the robot model. TOTG's `path_tolerance` will not function correctly.
+[mtc_node-5] [INFO] [1792893574.050799421] [mtc_node]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[mtc_node-5] [INFO] [1792893574.050930129] [mtc_node]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[mtc_node-5] [WARN] [1792893574.050934129] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[mtc_node-5] [INFO] [1792893574.050964962] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[mtc_node-5] [INFO] [1792893574.050986379] [mtc_node]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[mtc_node-5] [INFO] [1792893574.051260129] [planning_scene_interface_187651165923808.mtc_node.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'panda_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[mtc_node-5] [INFO] [1792893574.051313712] [mtc_node]: Calling Planner 'OMPL'
+[mtc_node-5] [INFO] [1792893574.064546129] [mtc_node]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[mtc_node-5] [INFO] [1792893574.070283087] [mtc_node]: Calling PlanningResponseAdapter 'ValidateSolution'
+[mtc_node-5] [INFO] [1792893574.071813087] [mtc_node]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[mtc_node-5] [WARN] [1792893574.072040587] [planning_scene_interface_187651165923808.mtc_node.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[mtc_node-5] [INFO] [1792893597.119912792] [mtc_node]:   placed sorting_demo_obj_det_3_cup
+[mtc_node-5] [INFO] [1792893601.133984128] [mtc_node]: Sorting demo finished. placed 5/5
+[mtc_node-5] [INFO] [1792893601.134024753] [mtc_node]: DONE. Keeping final markers/state available; Ctrl-C to exit.

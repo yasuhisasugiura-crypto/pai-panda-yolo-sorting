@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- Newly authored v0.4.3 reference template; not recovered original. -->
+<sdf version="1.9"><model name="pai_object"><static>true</static><pose>0 0 0.025 0 0 0</pose><link name="link">
+<collision name="c"><geometry><box><size>0.05 0.05 0.05</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>0.05 0.05 0.05</size></box></geometry></visual>
+</link></model></sdf>
